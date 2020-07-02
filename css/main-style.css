@@ -11,51 +11,7 @@ input[type="number"] {
   width: 80px;
 }
 
-.drag-element{
-    width: 150px;
-    min-height: 100px;
-    border: 2px solid #000;
-    font-size: 2rem;
-    text-align: center;
-}
-.drag-element-2{
-    position: absolute;
-    left: 50%;
-    top: 15px;
-    width: 100px;
-    min-height: 100px;
-    border: 2px dotted rgb(155, 34, 192);
-    border-radius: 4rem;
-    font-size: 1.8rem;
-    line-height: 3.2;
-    text-align: center;
-}
-.drag-element-3{
-    position: absolute;
-    right: 15px;
-    max-width: 100px;
-    max-height: 100px;
-}
-
-.drag-active{
-    border: 2px solid coral;
-    /* box-shadow: 1px 1px 1px #000; */
-}
-.drop-element{
-    width: 300px;
-    min-height: 200px;
-    margin-top: 50px;
-    border: 2px solid gray;
-    font-size: 2rem;
-    text-align: center;
-}
-.drop-active{
-    box-shadow: inset 0px 0px 10px 0px #000;
-    border: 2px solid #4fd94f
-}
-
 /* Нативные функции Drag'n'Drop  */
-
 .drag-panel {
     display: flex;
     justify-content: space-between;
@@ -78,7 +34,6 @@ input[type="number"] {
     box-shadow: 0 0 4px #000;
     cursor: -webkit-grabbing;
 }
-
 .drop-field {
     position: relative;
     display: flex;

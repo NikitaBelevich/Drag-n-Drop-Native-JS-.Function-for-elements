@@ -1,6 +1,5 @@
 'use strict';
 
-
 const dragPanel = document.querySelector('.drag-panel');
 const dragElement = dragPanel.firstElementChild;
 const dropElement = document.querySelector('.drop-field');
@@ -111,7 +110,6 @@ function makeElementDraggableNative(dragElement, classStyle, receivingSelector =
                 elem.classList.remove('drop-active2');
                 // убираем стилевое оформление
             }
-
             // (3) Drag элемент был отпущен
             document.onmouseup = function () {
                 // Если принимающий элемент найден, т.е не null
@@ -119,7 +117,6 @@ function makeElementDraggableNative(dragElement, classStyle, receivingSelector =
                     currentDroppable.append(dragElement);
                     dragElement.style.position = 'static';
                 }
-               
                 // Когда отпустили элемент, на document удаляем слушатель mousemove
                 // А также удаляем этот слушатель mouseup
                 this.removeEventListener('mousemove', onMouseMove);
@@ -130,13 +127,11 @@ function makeElementDraggableNative(dragElement, classStyle, receivingSelector =
                 }
                 dragElement.style.cursor = '-webkit-grab';
             }
-
         });
         // Для предотвращения случайного выделения текста
         dragElement.onmousedown = () => false; 
 
     } catch (error) {
-        console.log('catch');
         console.error(`TypeError: ${error.message}`);
     }
 }
