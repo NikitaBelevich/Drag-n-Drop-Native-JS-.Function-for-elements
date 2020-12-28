@@ -8,6 +8,8 @@
 
 В общем...
 
+Посмотреть: [Click](https://nikitabelevich.github.io/Drag-n-Drop-Native-JS-.Function-for-elements/)
+
 В файле nativeDrag.js находится эта функция, код вышел запутаннее и сложнее чем в браузерной реализации Drag'n'Drop, но обо всём по порядку:
 
 1.  Получите DOM - узел со страницы. Функция makeElementDraggableNative первым параметром принимает DOM - узел который вы хотите сделать перетаскиваемым.
